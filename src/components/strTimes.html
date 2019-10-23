@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 统计一个字符串内每个字母出现的个数 并找出出现次数最多的字母
+    // var str="helloworld";
+    // var arr=str.split("");
+    // var result=arr=arr.reduce((prev,ele,i,arr)=>{
+    //   if(!prev[ele]){
+    //     prev[ele]=1;
+    //   }else{
+    //     prev[ele]+=1;
+    //   }
+    //   return prev;
+    // },{});
+    // console.log(result);
+    // let s,count;
+    // for (const e in result) {
+    //   console.log(e,result[e]);
+    //   if(s==undefined){
+    //     s=e;
+    //     count=result[e];
+    //   }else{
+    //     if(result[e]>count){
+    //       s=e;
+    //     count=result[e];
+    //     }
+    //   }
+    // }
+    // console.log('出现次数最多字母是'+s+'出现了'+count+'次');
+  </script>
+  <script>
+    // // 冒泡算法  从小到大
+    // var arr1 = [1,5,2,54,7,34,26];
+    // var max;
+    // for(var i=1;i<arr1.length-1;i++){
+    //   for(var j=0;j<arr1.length-i;j++){
+    //     if(arr1[j+1]>arr1[j]){
+    //       max=arr1[j+1];
+    //       arr1[j+1]=arr1[j];
+    //       arr1[j]=max;
+    //     }
+    //   }
+    // }
+    // console.log(arr1);
+  </script>
+  <script>
+    // fib
+    // function getFib(n){
+    //   let fir=1,sec=1;
+    //   if(n==1 | n==2){
+    //     return 1;
+    //   }
+    //   let num=0,c;
+    //   for(let i=3;i<=n;i++){
+    //     num=fir+sec;
+    //     fir=sec;
+    //     sec=num;
+    //   }
+    //   return num;
+    // }
+    // 递归方法
+    function getFib(n){
+      if(n==1 | n==2){
+        return 1;
+      }
+      return getFib(n-1)+getFib(n-2);
+    }
+    console.log(getFib(6));
+  </script>
+  <script>
+    let str='<div class="formwork_img"><img class="" src="img/product/detail/59003d3fNd4e6c74e.jpg"></div>';
+    let reg=/^(img\/)\S+(\.jpg)$/ig;
+    
+  </script>
+</body>
+</html>
